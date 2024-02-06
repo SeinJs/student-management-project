@@ -1,0 +1,6 @@
+# Spring MVC day1 ~ day2 과제
+
+- [Spring MVC day1 과제](https://github.com/nhnacademy-bootcamp/spring-mvc/blob/main/docs/day1/100.%EA%B3%BC%EC%A0%9C/index.adoc)
+- [Spring MVC day2 과제](https://github.com/nhnacademy-bootcamp/spring-mvc/blob/main/docs/day2/100.%EA%B3%BC%EC%A0%9C/index.adoc)
+
+위 과제 수행 후, 학번 브랜치에 제출해주세요. 목요일(2월 8일)까지 제출합니다.
