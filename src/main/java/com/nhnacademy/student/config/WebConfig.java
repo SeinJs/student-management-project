@@ -2,6 +2,7 @@ package com.nhnacademy.student.config;
 
 import com.nhnacademy.student.common.CustomTagDialect;
 import com.nhnacademy.student.domain.User;
+import com.nhnacademy.student.interceptor.LoginCheckInterceptor;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
@@ -102,9 +103,11 @@ public class WebConfig implements WebMvcConfigurer, ApplicationContextAware, Mes
         return localeChangeInterceptor;
     }
 
+
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         WebMvcConfigurer.super.addInterceptors(registry);
         registry.addInterceptor(localeChangeInterceptor());
+        registry.addInterceptor(new LoginCheckInterceptor());
     }
 }

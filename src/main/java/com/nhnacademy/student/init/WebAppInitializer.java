@@ -33,10 +33,10 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
         CharacterEncodingFilter characterEncodingFilter = new CharacterEncodingFilter();
         characterEncodingFilter.setEncoding("UTF-8");
         characterEncodingFilter.setForceEncoding(true);
-        LoginCheckFilter loginCheckFilter = new LoginCheckFilter();
+//        LoginCheckFilter loginCheckFilter = new LoginCheckFilter();
         HiddenHttpMethodFilter hiddenHttpMethodFilter = new HiddenHttpMethodFilter();
 
-        return new Filter[]{characterEncodingFilter, loginCheckFilter, hiddenHttpMethodFilter};
+        return new Filter[]{characterEncodingFilter, hiddenHttpMethodFilter};
     }
 
     @Override
