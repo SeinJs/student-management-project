@@ -3,7 +3,6 @@ package com.nhnacademy.student.init;
 import com.nhnacademy.student.config.RootConfig;
 import com.nhnacademy.student.config.WebConfig;
 import org.springframework.web.filter.CharacterEncodingFilter;
-import com.nhnacademy.student.filter.LoginCheckFilter;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.filter.HiddenHttpMethodFilter;
 import org.springframework.web.servlet.DispatcherServlet;
